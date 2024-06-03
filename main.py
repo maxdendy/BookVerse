@@ -10,7 +10,7 @@ app = FastAPI()
 database = Database(Settings.db_url)
 
 
-#  получение скриптов и стилей
+#  получение скриптов и стилей 1
 @app.get('/js/{path}', response_class=FileResponse)
 def js(path):
     return f'scripts/{path}'
